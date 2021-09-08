@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIV</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: arial;
+            background-color: #eeecec;
+        }
+
+        /*Div buat class kiri,main,kanan,sama footer*/
+        .eee {
+            background-color: #ffffff;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-bottom: 0px;
+            margin-top: 40px;
+            padding: 3%;
+            border-top: 20px;
+            border: 1px solid grey;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        /*Navigasi Header*/
+        .header {
+            background-color: #dba800;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            max-height: 51px;
+            height: 51px;
+        }
+
+        /*Menu yang Warna Abu abu buat judul*/
+        .menu {
+            margin-top: 0px;
+            background-color: #3b3b3b;
+            padding-left: 120px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+        }
+
+        /*Konten div kiri tapi diilangin*/
+        .kiri {
+            margin-top: 5px;
+            background-color: #ffffff;
+            float: left;
+            width: 0%;
+            height: 400px;
+            text-align: center;
+            background: transparent;
+        }
+
+        .anakkiri {
+            padding-top: 200px;
+        }
+
+        /*isi web nya yang panjang itu berisi keterangan html*/
+        .main {
+            margin-top: 5px;
+            background-color: #ffffff;
+            float: left;
+            width: 68%;
+
+            margin-left: 0px;
+
+        }
+
+        .anakmain {
+            padding-top: 25px;
+        }
+
+        /*div kanan sebelah class main,buat naro ilan atau navigasi div lagi*/
+        .kanan {
+            margin-top: 5px;
+            background-color: #ffffff;
+            float: left;
+            width: 30%;
+
+
+            margin-bottom: 5px;
+            margin-left: 2%;
+        }
+
+        .anakkanan {
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        /*footer bawah buat naro sosmed*/
+        .kaki {
+            clear: both;
+            padding: 10px;
+            background-color: #e27272;
+            text-align: center;
+
+        }
+
+        .kaki2 {
+            clear: both;
+
+            background-color: #e27272;
+            text-align: center;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-bottom: 50px;
+
+        }
+
+        /*bagian dari class header yang dibagi lagi jadi 2*/
+        .dalemheader {
+            width: 60%;
+            margin-top: 15px;
+            float: left;
+            margin-left: 5%;
+            height: 23px;
+        }
+
+        /*bagian dari class header yang dibagi lagi jadi 2*/
+        .dalemheader2 {
+            width: 20%;
+            margin-top: 7px;
+            float: left;
+            margin-right: 5%;
+            margin-left: 8%;
+            height: 23px;
+            
+        }
+
+        /*daftar list header yang dibagi 2*/
+        li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        /*class (si) daftar list header yang dibagi 2 buat navigasi*/
+        .si a {
+            padding-right: 10px;
+            padding-left: 10px;
+            text-decoration: none;
+            color: #ffe695;
+        }
+
+        /*perubahan dari class (si) daftar list header yang dibagi 2 buat navigasi*/
+        .si a:hover {
+            color: #5e5407;
+        }
+
+        /*tag form buat ngebuat mesin pencari*/
+        .cari {
+            border-radius: 10px solid;
+            background-color: #f3f3f3;
+            display: inline-block;
+            border-radius: 5px !important;
+        }
+
+        /*tag form buat ngebuat mesin pencari*/
+        .cari input {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 10px;
+            outline: none;
+            background: transparent;
+            border: none;
+        }
+
+        /*tag form buat ngebuat mesin pencari spesifik lagi yaitu button-nya*/
+        .tombolcari {
+            display: inline;
+            background-color: #b6bbff !important;
+        }
+
+        /*perubahan tag form buat ngebuat mesin pencari*/
+        .tombolcari:hover {
+            background-color: #5863ff !important;
+        }
+
+        /*buat tag P kalo gasalah gw kasih class biar garibet ngatur hurufny*/
+        .huruf {
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 25px;
+        }
+
+        /*buat manual syntax highlight btw jancukkkkkkkkkkkk masa manual?:v*/
+        .kurung {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+        }
+
+        .tagnya {
+            color: cyan;
+            font-size: 15px;
+        }
+
+        .gapenting {
+            color: darkkhaki;
+            font-size: 15px;
+        }
+
+        /*pengaturan list kanan*/
+
+        .linklogo {
+            text-decoration: none;
+            text-align: left;
+            font-size: 15px;
+            padding-left: 0px;
+        }
+
+        .listlogo:hover {
+            background-color: #d6d6d6;
+            color: #2f95a7;
+        }
+
+        .listlogo {
+
+            border-top: 1px solid rgb(216, 216, 216);
+            border-right: 1px solid rgb(216, 216, 216);
+            border-left: 1px solid rgb(216, 216, 216);
+            border-radius: 1px;
+            padding: 7px;
+            color: #616161;
+        }
+
+        .logo {
+            margin-right: 9px;
+            margin-left: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+</head>
+<html>
+ <body>
+    <div class="header">
+        <div class="dalemheader">
+            <ul>
+                <li style="color: white; font-size: 20px; margin-right: 30px;"><b>NgodingKUY</b></li>
+                <li class="si" style="margin-left: 20px;"><a
+                        href="https://www.google.com/search?q=php&oq=php&aqs=chrome..69i57l2j69i59j69i60l2j69i61.924j0j7&sourceid=chrome&ie=UTF-8"
+                        target="_blank">PHP</a>
+                </li>
+                <li class="si"><a
+                        href="https://www.google.com/search?q=java&oq=java&aqs=chrome..69i57j69i60.1155j0j7&sourceid=chrome&ie=UTF-8"
+                        target="_blank">JAVA</a>
+                </li>
+                <li class="si"><a
+                        href="https://www.google.com/search?safe=strict&sxsrf=ACYBGNRP3mArUSViD5IzruFxIyQXvO5mpg%3A1573271417329&ei=eTfGXcXmE9ngrQG0nSc&q=javascript&oq=javascript&gs_l=psy-ab.3..0i71l8.60508.64537..64907...0.5..0.2302.4375.9-2......0....1..gws-wiz.4pz8tygO4T4&ved=0ahUKEwiFh9zfnNzlAhVZcCsKHbTOCQAQ4dUDCAo&uact=5"
+                        target="_blank">JavaScript</a>
+                </li>
+                <li class="si"><a
+                        href="https://www.google.com/search?safe=strict&sxsrf=ACYBGNQKP3v7ok0SYBsczqO5WiNybSWFSg%3A1573271492656&ei=xDfGXZ7hJ9K9rQHT1pe4Ag&q=git&oq=git&gs_l=psy-ab.3..35i362i39l10.49557.50538..50946...1.3..0.0.0.......0....1..gws-wiz.....10..0i71.nYSEjieNPDA&ved=0ahUKEwie09GDndzlAhXSXisKHVPrBScQ4dUDCAo&uact=5"
+                        target="_blank">GIT</a>
+                </li>
+                <li class="si"><a
+                        href="https://www.google.com/search?safe=strict&sxsrf=ACYBGNSjZgM68dJQAwvGirGd9CX-EXXKOQ%3A1573271550823&ei=_jfGXdLoMcPerQHn9Z5A&q=python&oq=python&gs_l=psy-ab.3..35i362i39l10.68123.70613..70945...1.1..0.0.0.......0....1..gws-wiz.....10..0i71.3bw7wQSJ_eg&ved=0ahUKEwjS36-fndzlAhVDbysKHee6BwgQ4dUDCAo&uact=5"
+                        target="_blank">Python</a>
+                </li>
+                <li style="color: white;font-size: 20px;margin-left: 10px;">[※]</li>
+
+            </ul>
+        </div>
+        <div class="dalemheader2">
+            <form class="cari">
+                <input class="kotakcari" type="text" placeholder="Cari Disini...">
+                <input class="tombolcari" type="submit" placeholder="">
+            </form>
+        </div>
+    </div>
+    <div class="menu">
+        <h1 style="word-spacing: 5px; font-size: 40px; color: #ffffff;">Tutorial HTML Untuk Pemula</h1>
+        <p style="font-size: 18px; line-height: 40px; color: #ffffff;"><b>HTML merupakan bahasa dasar untuk membuat
+                web</b></p>
+    </div>
+    <div class="eee">
+        <div class=" kiri">
+            <div class="anakkiri"></div>
+        </div>
+        <div class="main">
+            <div class="anakmain">
+                <br>
+                <br>
+                <br>
+                <h1>Belajar HTML dari Nol: Pengenalan Dasar HTML untuk Pemula</h1>
+                <br>
+                <hr class="huruf">
+                <br>
+                <br>
+                <br>
+                <p class="huruf">HTML adalah bahasa pertama yang harus dipelajari bila kamu ingin menjadi seorang Web
+                    Developer,
+                    karena HTML merupakan bahan dasar untuk membuat web.</p>
+                <br>
+                <br>
+                <h1>Apa itu HTML?</h1>
+                <br>
+                <br>
+                <p class="huruf">HTML atau <i>Hyper Text Markup Language</i> merupakan sebuah bahasa <a
+                        href="https://kbbi.web.id/markah" target="_blank" style="text-decoration: none;">Markah</a>
+                    untuk
+                    membuat
+                    halaman web. Padanan HTML dalam bahasa indonesia adalah Bahasa Markah Hiper Teks (BMHT).</p>
+                <br>
+                <br>
+                <h1>Membuat file HTML</h1>
+                <br>
+                <br>
+                <p class="huruf">File HTML dapat dibuat dengan teks editor seperti notepad. Lebih bagus lagi menggunakan
+                    teks editor yang memiliki fitur syntax highlighter seperti <i>Notepad++, Sublime Text, Gedit</i>,
+                    Kate, dan
+                    lain-lain. File HTML disimpan dengan ekstensi html atau htm.</p>
+                <br>
+                <img src="woianjay.png" alt="ContohGambar">
+                <br>
+                <br>
+                <h1>Contoh-contoh HTML</h1>
+                <br>
+                <br>
+                <p class="huruf">Kita ingin menampilkan informasi di website. Informasi ini merupakan sebuah pesan:
+                    <i>Situs web ini milik Diva Adelia Putra.</i> Maka bentuk kode HTML-nya akan seperti ini:</p>
+                <br>
+                <br>
+                <div
+                    style="background-color:rgb(124, 124, 124); border-radius: 3px; padding: 4px; overflow-x: scroll;width: 70%; overflow-y: scroll;">
+                    <pre>
+                   <code>
+  <span class="kurung"><</span><span class="tagnya">!DOCTYPE html</span><span class="kurung">></span>
+  <span class="kurung"><</span><span class="tagnya">html</span><span class="kurung">></span>
+    <span class="kurung"><</span><span class="tagnya">body</span><span class="kurung">></span>
+        <span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #eee4e4;">web ini milik Diva Adelia Putra</span>
+    <span" class="kurung"><</span"><span class="tagnya">/body</span><span class="kurung">></span>
+  <span class="kurung"><</span><span class="tagnya">/html</span><span class="kurung">></span>
+                   </code>
+                </pre>
+                </div>
+                <br>
+                <p class="huruf">HTML di disusun dengan tag-tag (penanda). Perhatikanlah, letak penulisan informasi yang
+                    ingin dimuat di website. Berada di atantara tag <span
+                        style="color: rgb(98, 0, 255);">&lt;body&gt;</span> dan
+                    <span style="color: rgb(98, 0, 255);"> &lt;/body&gt;</span>. tag ini merupakan tubuh dokumen. Setiap
+                    informasi yang ditulis di dalam penada ini, akan tampil di halaman web.</p>
+                <br>
+                <p class="huruf">Contoh selanjutnya, kita akan berkenalan dengan tag <span
+                        style="color: rgb(98,0,255);">&lt;head&gt;</span> dan tag
+                    <span style="color: rgb(98,0,255);">&lt;title&gt;</span>.Tag
+                    <span style="color: rgb(98,0,255);">&lt;head&gt;</span> merupakan kepala dokumen. Agar lebih mudah
+                    memahami, contoh yang tadi kita modifikasi.
+                    Tambahkanlah tag <span style="color: rgb(98,0,255);">&lt;head&gt;</span> dan tag <span
+                        style="color: rgb(98,0,255);">&lt;title&gt;</span>Sehingga kodenya jadi seperti ini</p>
+                <div
+                    style="background-color:rgb(124, 124, 124); border-radius: 3px; padding: 4px; overflow-x: scroll;width: 70%; overflow-y: scroll;">
+                    <pre>
+    <code>
+  <span class="kurung"><</span><span class="tagnya">!DOCTYPE html</span><span class="kurung">></span>
+  <span class="kurung"><</span><span class="tagnya">html</span><span class="kurung">></span>
+    <span class="kurung"><</span><span class="tagnya">head</span><span class="kurung">></span>
+      <span class="kurung"><</span><span class="tagnya">title</span><span class="kurung">></span><span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #eee4e4;">Situs web Diva</span><span class="kurung"><</span><span class="tagnya">title</span><span class="kurung">></span>
+    <span class="kurung"><</span><span class="tagnya">/head</span><span class="kurung">></span>
+  <span class="kurung"><</span><span class="tagnya">body</span><span class="kurung">></span>
+      </span><span style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #eee4e4;">web ini milik Diva Adelia Putra</span>
+  <span class="kurung"><</span><span class="tagnya">/body</span><span class="kurung">></span>
+  <span class="kurung"><</span><span class="tagnya">/html</span><span class="kurung">></span>
+    </code>
+</pre>
+                </div>
+                <br>
+                <br>
+                <p class="huruf">
+                    Tag <span style="color: rgb(98,0,255);">&lt;title&gt;</span> berfungsi untuk membuat judul website.
+                    Sementara itu tag <span style="color: rgb(98,0,255);">&lt;head&gt;</span> berfungsi
+                    untuk
+                    membuat kepala dokumen. Tag <span style="color: rgb(98,0,255);">&lt;title&gt;</span> harus
+                    diletakkan di dalam tag <span style="color: rgb(98,0,255);">&lt;head&gt;</span>. Perhatikanlah
+                    hasilnya, teks yang ada di tag <span style="color: rgb(98,0,255);">&lt;title&gt;</span> akan
+                    ditampilkan sebagai judul website.</p>
+                <br>
+                <br>
+                <h1>KESIMPULAN</h1>
+                <br>
+                <br>
+                <p class="huruf">HTML adalah bahasa yang wajib dipelajari oleh siapa saja yang tertarik menjadi pembuat
+                    website (<i>Web Developer</i>). Karena HTML merupakan bahan dasar untuk membuat website.
+                    Contoh-contoh
+                    sederhana di atas sudah menjelaskan bagaimana kode HTML itu. Banyak tag yang harus di hafal. Kunci
+                    untuk mengingatnya adalah sering berlatih membuat file HTML. Insa’allah anda akan ingat di luar
+                    kepala.</p>
+                <br>
+                <br>
+                <h1>Credits dan Referensi</h1>
+                <br>
+                <br>
+                <p class="Huruf" style="font-size: 20px;color: red;">Saya Ngambil ikon Beserta gambar dari <a
+                        href="https://www.flaticon.com/" target="_blank" style="text-decoration: none;color: brown;">FlatIcon</a>
+                    dan juga<a href="https://icons8.com/" target="_blank" style="text-decoration: none; color: brown;"> Icons8</a>
+                    <br>
+                    <br>
+                    Website Materi dan UI saya ikutin dari <a href="https://www.petanikode.com/html-dasar/"
+                        target="_blank" style="text-decoration:none ;color: orangered;">Petanikode.com</a> 
+                </p>
+            </div>
+        </div>
+        <div class="kanan">
+            <div class="anakkanan">
+                <div style=" border-radius: 3px;"><span style="font-size: 25px;">Tutorial Lainya :
+                    </span>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo" style="border-top: 2px solid grey;"><img class="logo" src="java.svg"
+                                width="25px">JAVA
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="html-5.svg" width="25px">HTML
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="php.svg" width="25px">PHP
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="javascript.svg" width="25px">JavaScript
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="git.svg" width="25px">GIT
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="python.svg" width="25px">Python
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="c++.svg" width="25px">C++
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="icons8-c-programming.svg" width="25px">C
+                        </div>
+                    </a>
+                    <a class="linklogo" href="https://www.youtube.com/" target="_blank">
+                        <div class="listlogo"><img class="logo" src="icons8-c-sharp-logo.svg" width="25px">C#
+                        </div>
+                    </a>
+                    <a class="linklogo" href="https://www.youtube.com/" target="_blank">
+                        <div class="listlogo"><img class="logo" src="kotlin.svg" width="25px">Kotlin
+                        </div>
+                    </a>
+                    <a class="linklogo" href="https://www.youtube.com/" target="_blank">
+                        <div class="listlogo"><img class="logo" src="icons8-ruby-programming-language.svg"
+                                width="25px">Ruby
+                        </div>
+                    </a>
+                    <a class="linklogo" href="https://www.youtube.com/" target="_blank">
+                        <div class="listlogo"><img class="logo" src="icons8-bootstrap.svg" width="25px">Bootstrap
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="icons8-laravel-50.png" width="25px">Laravel
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo"><img class="logo" src="codeigniter.jpg" width="25px">CodeIgniter
+                        </div>
+                    </a>
+                    <a class="linklogo" href="youtube.com" target="_blank">
+                        <div class="listlogo" style="border-bottom: 2px solid grey;"><img class="logo"
+                                src="icons8-nodejs.svg" width="25px">NodeJS
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="kaki" style="background: transparent;"></div>
+    </div>
+    <div class="kaki2">ftwwwwwwwwwwwwwwwwwwwwwwwww</div>
+</body>
+
+</html>
